@@ -1,0 +1,36 @@
+{
+  "name": "capstone-project-1",
+  "version": "1.0.0",
+  "description": "Event demo page",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx stylelint \"**/*.{css,scss}\" --fix && npx hint . && npx eslint . && exit 1",
+    "sass": "node-sass --source-map css/ -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanLPalacios/capstone-project-1.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Juan Luis Palacios Perez",
+  "license": "CC-BY-NC-4.0",
+  "bugs": {
+    "url": "https://github.com/JuanLPalacios/capstone-project-1/issues"
+  },
+  "homepage": "https://github.com/JuanLPalacios/capstone-project-1#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.25.4",
+    "hint": "^6.1.9",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  }
+}
