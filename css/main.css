@@ -451,6 +451,31 @@ body > footer > .f-logo {
   justify-content: center;
 }
 
+#close-menu {
+  border: none;
+  background: none;
+  width: 40px;
+  float: right;
+  padding: 10px;
+}
+
+#close-menu > img {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-items-c.active {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    background: var(--primary-color-white);
+    padding: 10px;
+  }
+}
+
 @media (min-width: 768px) {
   * {
     box-sizing: border-box;
