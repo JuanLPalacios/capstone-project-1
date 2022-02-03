@@ -67,5 +67,30 @@ window.addEventListener('load', () => {
   const speakersList = document.getElementById('speakers-list');
   if (speakersList) {
     speakersList.innerHTML = speakers.map((x) => speakerTemplate(x)).join('');
+    let colapsedHeight = 0;
+    let originalHeight = 0;
+    const clacHeights = () => {
+      colapsedHeight = -10;
+      originalHeight = -10;
+      document.querySelectorAll('#speakers-list > li').forEach((x, i) => {
+        originalHeight += x.offsetHeight + 10;
+        if (i < 2) colapsedHeight += x.offsetHeight + 10;
+      });
+      speakersList.style = '';
+      speakersList.classList.remove('colapse');
+    };
+    clacHeights();
+    window.addEventListener('resize', clacHeights);
+    speakersList.style.maxHeight = `${colapsedHeight}px`;
+    speakersList.classList.add('colapse');
+    document.getElementById('more').addEventListener('click', () => {
+      if (!speakersList.classList.contains('colapse')) {
+        speakersList.classList.add('colapse');
+        speakersList.style.maxHeight = `${colapsedHeight}px`;
+      } else {
+        speakersList.classList.remove('colapse');
+        speakersList.style.maxHeight = `${originalHeight}px`;
+      }
+    });
   }
 });
