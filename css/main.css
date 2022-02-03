@@ -85,6 +85,10 @@ h6,
   border: solid 1px var(--primary-color-gray);
 }
 
+.btn-more::before {
+  content: 'Less';
+}
+
 .btn.btn-more::after {
   content: '>';
   display: inline-block;
@@ -473,6 +477,14 @@ body > footer > .f-logo {
     width: 100vw;
     background: var(--primary-color-white);
     padding: 10px;
+  }
+
+  .colapse + .btn-more::before {
+    content: 'More';
+  }
+
+  .colapse + .btn-more::after {
+    transform: rotate(90deg);
   }
 }
 
