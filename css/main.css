@@ -601,7 +601,11 @@ body > footer > .f-logo {
 
   .social-liks > a {
     display: inline-block;
-    padding: 2px;
+    padding: 2px 4px;
+    color: var(--primary-color-white);
+    text-decoration: none;
+    line-height: 1rem;
+    vertical-align: middle;
   }
 
   .grid {
