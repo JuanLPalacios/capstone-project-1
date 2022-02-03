@@ -1,11 +1,12 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Event Page
+# Computer Graphics Conference 2022
 
-> Event landing page prototype.
+> a simple prototipe of a responsive website implementation.
 
-![screenshot]()
+![screenshots](screenshots.png)
 
+A simple impementation of responsive design for mobile and desktop including home and about pages for the fictional "Computer Graphics Conference 2022" it also has a simple implementation of a mobile colapsable list and popup menu based on hash navigation events. 
 
 ## Built With
 
@@ -39,4 +40,4 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - [Cindy Shin](https://github.com/microverseinc/curriculum-html-css/blob/main/capstone/html_capstone.md#:~:text=Cindy%20Shin%20in%20Behance) in Behance for her [design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
-- [microverse](http://www.microverse.org) for the config templates and original design
+- [microverse](http://www.microverse.org) for the config templates
