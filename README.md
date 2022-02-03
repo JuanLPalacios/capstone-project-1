@@ -2,11 +2,11 @@
 
 # Computer Graphics Conference 2022
 
-> a simple prototipe of a responsive website implementation.
+> a simple prototype of a responsive website implementation.
 
 ![screenshots](screenshots.png)
 
-A simple impementation of responsive design for mobile and desktop including home and about pages for the fictional "Computer Graphics Conference 2022" it also has a simple implementation of a mobile colapsable list and popup menu based on hash navigation events. 
+A simple implementation of responsive design for mobile and desktop including home and about pages for the fictional "Computer Graphics Conference 2022" it also has a simple implementation of a mobile colapsable list and popup menu based on hash navigation events. 
 
 ## Built With
 
