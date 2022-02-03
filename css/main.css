@@ -13,6 +13,13 @@
   --h4-font-size: 1.09rem;
   --h5-font-size: 0.9rem;
   --h6-font-size: 0.75rem;
+  --text-font-size-md: 1em;
+  --h1-font-size-md: 4.5rem;
+  --h2-font-size-md: 3rem;
+  --h3-font-size-md: 2.3rem;
+  --h4-font-size-md: 1.8rem;
+  --h5-font-size-md: 1.5rem;
+  --h6-font-size-md: 0.75rem;
 }
 
 * {
@@ -442,4 +449,253 @@ body > footer > .f-logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media (min-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  section > hr,
+  header > hr,
+  footer > hr {
+    margin-block: -13px 0;
+  }
+
+  h1,
+  .bold-title {
+    font-family: var(--title-font-md);
+  }
+
+  h1,
+  .h1 {
+    font-size: var(--h1-font-size-md);
+  }
+
+  h2,
+  .h2 {
+    font-size: var(--h2-font-size-md);
+  }
+
+  h3,
+  .h3 {
+    font-size: var(--h3-font-size-md);
+  }
+
+  .p-item > h3 {
+    font-size: var(--h5-font-size-md);
+  }
+
+  h4,
+  .h4 {
+    font-size: var(--h4-font-size-md);
+    letter-spacing: -0.03rem;
+  }
+
+  h5,
+  .h5 {
+    font-size: var(--h5-font-size-md);
+  }
+
+  h6,
+  .h6 {
+    font-size: var(--h5-font-size-md);
+  }
+
+  button#close-menu {
+    display: none;
+  }
+
+  .card-content {
+    min-height: 225px;
+    font-size: var(--h5-font-size-md);
+  }
+
+  .spk-content dt .name {
+    font-size: var(--h5-font-size-md);
+  }
+
+  .btn {
+    background: transparent;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+
+  .btn-more {
+    display: none;
+  }
+
+  body > section,
+  body > header,
+  body > footer {
+    padding: 80px 14%;
+  }
+
+  .tight {
+    padding: 0 21% 80px;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .navbar-brand {
+    vertical-align: top;
+    display: inline-block;
+    padding: 5px;
+    height: 73px;
+
+    /* width: 50px; */
+    color: inherit;
+  }
+
+  .navbar-brand > img {
+    height: 100%;
+  }
+
+  .social-liks {
+    display: block;
+    background-color: var(--primary-color-black);
+    padding: 0 14vw;
+    margin: 0 -14vw;
+    text-align: right;
+    height: 32px;
+  }
+
+  .social-liks > a {
+    display: inline-block;
+    padding: 2px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    margin-block: 47px;
+    grid-gap: 10px 30px;
+    max-height: none !important;
+  }
+
+  img.logo-img {
+    padding: 36px 10%;
+    width: 60%;
+    margin: 39px auto;
+  }
+
+  body > footer > * {
+    margin: 0 22px;
+  }
+
+  body > footer > .f-logo {
+    max-width: 25%;
+  }
+
+  .partners ul > li {
+    max-width: 20%;
+  }
+
+  .p-item > img {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    object-fit: contain;
+  }
+
+  .p-item {
+    padding: 19px 13px 10px;
+    background: #fff1;
+    margin: 40px 3px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 80px 4em auto;
+    grid-gap: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .row-md {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: nowrap;
+  }
+
+  body > section > h2,
+  body > header > h2,
+  body > footer > h2 {
+    margin-block: 56px 27px;
+    font-size: var(--h4-font-size-md);
+  }
+
+  .banner {
+    padding: 100px 30% 100px 14%;
+  }
+
+  .banner.center {
+    padding: 50px 14% 50px;
+  }
+
+  .banner header h1 {
+    letter-spacing: 0.05em;
+  }
+
+  .banner footer {
+    font-size: 1.3em;
+  }
+
+  .banner q {
+    margin-right: 17%;
+    padding: 48px 34px;
+    background: var(--primary-color-white);
+  }
+
+  .banner.center q {
+    margin: 15px 8%;
+  }
+
+  header.navbar {
+    padding: 0 14%;
+    background: var(--primary-color-white);
+    height: 105px;
+  }
+
+  .banner header p {
+    font-size: var(--h2-font-size-md);
+  }
+
+  .banner time {
+    font-size: var(--h3-font-size-md);
+    letter-spacing: -0.01em;
+    margin-block: 0 6px;
+  }
+
+  .card-content h3 {
+    font-size: var(--h3-font-size-md);
+  }
+
+  .navbar-burger {
+    display: none;
+  }
+
+  .navbar-items-c {
+    display: flex;
+    float: right;
+    width: auto;
+  }
+
+  .navbar-menu {
+    padding: 13px 0;
+    display: block;
+    float: right;
+    margin: 0;
+  }
+
+  .navbar-menu-link {
+    margin: 0;
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+  }
 }
